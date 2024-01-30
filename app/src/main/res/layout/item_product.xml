@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/cv_item_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp">
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintDimensionRatio="8:6"/>
+
+        <TextView
+            android:id="@+id/tv_title_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Product Name "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:layout_margin="6dp"
+            android:maxLines="2"
+            android:textAlignment="textEnd"
+            android:maxWidth="250dp"
+            android:paddingEnd="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_code_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_product"
+            android:text="Referencia"
+            android:visibility="gone"
+            android:layout_margin="6dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cost_product"
+            app:layout_constraintTop_toBottomOf="@+id/tv_code_product"
+            android:text="Categoría:"
+            android:layout_margin="6dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_category_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_product"
+            android:text="$ 2.800"
+            android:textAlignment="textEnd"
+            android:layout_margin="6dp"
+            android:paddingEnd="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cost_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cost_product"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category_product"
+            android:text="Precio:"
+            android:layout_margin="6dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_cost_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category_product"
+            android:text="$ 2.800"
+            android:textAlignment="textEnd"
+            android:layout_margin="6dp"
+            android:paddingEnd="16dp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cost_product"
+            android:layout_marginTop="16dp"
+            android:background="#DEDEDE"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

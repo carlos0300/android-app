@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">La Esquinita</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Dropdown list-->
+    <string-array name="categories">
+        <item>SELECCIONE UNA CATEGORÍA</item>
+        <item>ASEO PERSONAL</item>
+        <item>BEBIDAS</item>
+        <item>CERVEZAS</item>
+        <item>ENERGIZANTES</item>
+        <item>ENLATADOS</item>
+        <item>DULCES</item>
+        <item>GALLETAS</item>
+        <item>GASEOSAS</item>
+        <item>LICORES</item>
+        <item>LACTEOS</item>
+        <item>PASABOCAS</item>
+        <item>PONQUES</item>
+        <item>UTENSILIOS DE ASEO</item>
+        <item>VINOS</item>
+        <item>OTROS</item>
+    </string-array>
+
+    <string-array name="percents">
+        <item>PORCENTAJE DE GANANCIA</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>35%</item>
+        <item>40%</item>
+        <item>45%</item>
+        <item>50%</item>
+    </string-array>
+
+</resources>
